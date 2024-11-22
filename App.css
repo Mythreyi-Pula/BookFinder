@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 300vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: transparent;
+}
+
+.heading {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-type-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  color: black;
+}
+
+.search-type-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: rgb(146, 145, 145);
+  color: black;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  gap: 15px;
+}
+input[type='text']::placeholder {
+  color: gray; /* Change the color of placeholder text */
+}
+option {
+  color: white;
+}
+select {
+  color: black; /* Text color inside the dropdown */
+  background-color: white; /* White background for the dropdown */
+  padding: 8px 12px; /* Add padding for better spacing */
+  border-radius: 5px; /* Optional: rounded corners */
+  border: 1px solid #ccc;
+}
+
+input[type='text'] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white; /* Change to white background */
+  color: black;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.clear-button {
+  position: absolute;
+  top: 45%;
+  right: 10px; /* Adjust the distance from the right edge */
+  transform: translateY(-50%); /* Center vertically */
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Hover effect for the clear button */
+.clear-button:hover {
+  color: red; /* Change color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .search-type-select {
+    width: 200px;
+  }
+
+  input[type='text'] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin-left: 0;
+    margin-top: -5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .search-type-select {
+    width: 45%;
+  }
+
+  input[type='text'] {
+    max-width: 450px;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main-container {
+    max-width: 30%;
+  }
+
+  .search-type-select {
+    width: 250px;
+  }
+
+  input[type='text'] {
+    max-width: 600px;
+    color: black;
+  }
+
+  button {
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-container {
+    max-width: 1200px;
+  }
+
+  .heading {
+    font-size: 42px;
+  }
+
+  .search-type-select {
+    width: 270px;
+  }
+
+  input[type='text'] {
+    max-width: 700px;
+    color: black;
+  }
+}
