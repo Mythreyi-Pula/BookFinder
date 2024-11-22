@@ -1,7 +1,13 @@
-Project Overview: Book Finder Application
+**Project Overview: 
+**
+
+
+**Book Finder Application**
+
 The task was to develop a web application for a user, "Alex," who is a college student looking to search for books. The project used React as the frontend framework and leveraged the Open Library Search API to retrieve book details based on different parameters. The goal was to create a user-friendly, responsive, and visually appealing interface for book searching.
 
-Technology Stack
+**Technology Stack**
+
 Frontend Framework: React
 Styling: Plain CSS
 Data Fetching: Axios for API requests to Open Library API
